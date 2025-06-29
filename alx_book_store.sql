@@ -1,7 +1,7 @@
-
-
+-- Create the database
 CREATE DATABASE alx_book_store;
 
+-- Use the database
 USE alx_book_store;
 
 -- Create the Authors table
@@ -27,6 +27,8 @@ CREATE TABLE Customers (
     email VARCHAR(215) NOT NULL,
     address TEXT NOT NULL
 );
+
+-- Create the Orders table
 CREATE TABLE Orders (
     order_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
